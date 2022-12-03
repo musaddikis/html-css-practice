@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML,CSS</title>
+    <style>
+        *{margin:0;padding:0}
+        ul{
+          margin:0;
+          padding:0;
+          width:25%;
+          position: fixed;
+          overflow: auto;
+          height:100%;
+          background-color: rgb(233, 233, 233);
+        }
+        ul li a{
+          text-decoration: none;
+          padding:9px 12px;
+          display: block;
+          font-size: 18px;
+        }
+        li:first-child a{
+          background-color: rgb(10, 148, 42);
+          color: #fff;
+        }
+        ul li a:hover:not(.fc){
+          background-color: #000;
+          color:#fff;
+        }
+    </style>
+</head>
+<body>
+   <nav>
+      <ul>
+        <li><a class="fc" href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Products</a></li>
+      </ul>
+   </nav>
+
+   
+</body>
+</html>
