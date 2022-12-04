@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>HTML,CSS</title>
-    <style>
-        *{margin:0;padding:0}
-        ul{
-          margin:0;
-          padding:0;
-          width:25%;
-          position: fixed;
-          overflow: auto;
-          height:100%;
-          background-color: rgb(233, 233, 233);
-        }
-        ul li a{
-          text-decoration: none;
-          padding:9px 12px;
-          display: block;
-          font-size: 18px;
-        }
-        li:first-child a{
-          background-color: rgb(10, 148, 42);
-          color: #fff;
-        }
-        ul li a:hover:not(.fc){
-          background-color: #000;
-          color:#fff;
-        }
-    </style>
-</head>
-<body>
-   <nav>
-      <ul>
-        <li><a class="fc" href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Products</a></li>
-      </ul>
-   </nav>
 
-   
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>HTML,CSS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    form {
+      margin: 25px;
+      padding: 25px 30px;
+      background-color: #F2F2F2;
+      width: 700px;
+      border-radius: 10px;
+    }
+
+    label {
+      display: inline-block;
+      margin: 10px 0;
+      font-size: 14px;
+      font-family: Arial;
+    }
+
+    input {
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    select {
+      width: 100%;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="" method="GET">
+    <label for="fname">First Name</label><br />
+    <input type="text" name="fname" id="fname" placeholder="Enter Your First Name"><br />
+    <label for="lname">Last name</label><br>
+    <input type="text" name="lname" id="lname" placeholder="Enter Your Last Name"><br>
+    <label for="country">Country</label><br>
+    <select name="country" id="country">
+      <option value="Au">Austrilia</option>
+      <option value="Ba">Bangladesh</option>
+      <option value="Ca">Canada</option>
+    </select>
+  </form>
+
+
 </body>
+
 </html>
